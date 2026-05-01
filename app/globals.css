@@ -3,8 +3,8 @@
 :root {
   --bg:     #111110;
   --ink:    #E8E6E1;
-  --mute:   #9B9791;
-  --dim:    #6B6864;
+  --mute:   #5A5955;
+  --dim:    #3A3935;
   --hover:  #1A1918;
   --line:   rgba(255, 255, 255, 0.04);
 }
@@ -28,7 +28,7 @@ html {
 body {
   background: var(--bg);
   color: var(--ink);
-  font-family: 'DM Sans', Arial, sans-serif;
+  font-family: var(--font-dm-sans), 'DM Sans', Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.8;
@@ -37,7 +37,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
   font-weight: 400;
   color: var(--ink);
 }
@@ -73,7 +73,7 @@ a:hover {
 /* ── Section label ───────────────────────────────────── */
 .section-label {
   display: inline-block;
-  font-family: 'DM Sans', Arial, sans-serif;
+  font-family: var(--font-dm-sans), 'DM Sans', Arial, sans-serif;
   font-size: 11px;
   font-weight: 300;
   text-transform: uppercase;
@@ -89,7 +89,7 @@ a:hover {
   border-radius: 0;
   background: transparent;
   color: var(--ink);
-  font-family: 'DM Sans', Arial, sans-serif;
+  font-family: var(--font-dm-sans), 'DM Sans', Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.08em;
