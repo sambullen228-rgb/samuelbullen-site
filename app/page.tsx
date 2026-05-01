@@ -131,7 +131,7 @@ export default function Home() {
         {/* Announcement bar */}
         {!announcementDismissed && (
           <div className="relative flex h-10 items-center justify-center bg-[#111110] px-10">
-            <p className="text-center text-[11px] uppercase tracking-[0.1em] text-[#5A5955]">
+            <p className="text-center text-[11px] uppercase tracking-[0.1em] text-[#9A9690]">
               Now booking new clients. Start with the service that fits your hair.{" "}
               <a
                 href="#pricing"
@@ -154,11 +154,11 @@ export default function Home() {
           <a href="#top" className="font-normal tracking-[0.02em] text-[#E8E6E1] transition duration-[400ms] hover:text-[#5A5955]" style={{ fontFamily: "var(--font-playfair), 'Playfair Display', Georgia, serif", fontSize: "16px" }}>
             SB
           </a>
-          <nav className="flex gap-5 text-[10px] font-light uppercase tracking-[0.08em] text-[#5A5955] sm:gap-7 sm:text-[11px]">
-            <a href="#hair" className="transition-colors duration-[400ms] hover:text-[#E8E6E1]">Hair</a>
-            <a href="#pricing" className="transition-colors duration-[400ms] hover:text-[#E8E6E1]">Services</a>
-            <a href="#education" className="transition-colors duration-[400ms] hover:text-[#E8E6E1]">Education</a>
-            <a href="#photography" className="transition-colors duration-[400ms] hover:text-[#E8E6E1]">Portrait Work</a>
+          <nav className="flex gap-5 text-[10px] font-light uppercase tracking-[0.08em] text-[#E8E6E1] sm:gap-7 sm:text-[11px]">
+            <a href="#hair" className="transition-colors duration-[400ms] hover:text-[#5A5955]">Hair</a>
+            <a href="#pricing" className="transition-colors duration-[400ms] hover:text-[#5A5955]">Services</a>
+            <a href="#education" className="transition-colors duration-[400ms] hover:text-[#5A5955]">Education</a>
+            <a href="#photography" className="transition-colors duration-[400ms] hover:text-[#5A5955]">Portrait Work</a>
           </nav>
         </header>
 
@@ -182,18 +182,18 @@ export default function Home() {
               SoHo NYC hairstylist specializing in hard-to-manage hair, texture, and natural movement.
             </p>
             <p
-              className="mt-6 text-[11px] uppercase tracking-[0.15em] text-[#3A3935]"
+              className="mt-6 text-[11px] uppercase tracking-[0.15em] text-[#5A5955]"
             >
               SoHo / Downtown NYC
             </p>
             <div
-              className="mt-9 max-w-lg space-y-5 text-[17px] leading-[1.65] text-[#5A5955] md:mt-11 md:text-[20px]"
+              className="mt-9 max-w-lg space-y-5 text-[17px] leading-[1.65] text-[#9A9690] md:mt-11 md:text-[20px]"
             >
               <div>
                 <p className="text-[24px] font-normal leading-tight tracking-[-0.02em] text-[#E8E6E1] md:text-[32px]">
                   Hair is a fabric.
                 </p>
-                <p className="mt-4 text-[16px] leading-[1.8] text-[#5A5955] md:text-[18px]">
+                <p className="mt-4 text-[16px] leading-[1.8] text-[#9A9690] md:text-[18px]">
                   It needs to be treated like one. You wouldn&apos;t treat silk like wool, would you?
                 </p>
               </div>
@@ -226,7 +226,7 @@ export default function Home() {
                 </a>
                 <a
                   href="#hair"
-                  className="px-1 py-3 text-[12px] uppercase tracking-[0.08em] text-[#5A5955] transition duration-[400ms] hover:text-[#E8E6E1]"
+                  className="px-1 py-3 text-[12px] uppercase tracking-[0.08em] text-[#E8E6E1] transition duration-[400ms] hover:text-[#5A5955]"
                 >
                   View Work
                 </a>
@@ -244,7 +244,7 @@ export default function Home() {
               </a>
               <a
                 href="#hair"
-                className="px-1 py-3 text-[12px] uppercase tracking-[0.08em] text-[#5A5955] transition duration-[400ms] hover:text-[#E8E6E1]"
+                className="px-1 py-3 text-[12px] uppercase tracking-[0.08em] text-[#E8E6E1] transition duration-[400ms] hover:text-[#5A5955]"
               >
                 View Work
               </a>
@@ -271,7 +271,7 @@ export default function Home() {
             {["15 Years Experience", "469 Broadway, 4th Floor, New York, NY", "Hair + Portraits"].map((stat) => (
               <span
                 key={stat}
-                className="text-center text-[10px] uppercase tracking-[0.2em] text-[#3A3935] sm:px-10"
+                className="text-center text-[10px] uppercase tracking-[0.2em] text-[#5A5955] sm:px-10"
               >
                 {stat}
               </span>
@@ -333,7 +333,7 @@ export default function Home() {
         <section
           className="mx-auto max-w-7xl px-5 pb-4 pt-4 md:px-10 md:pb-8 md:pt-6"
         >
-          <div className="mx-auto max-w-[380px] space-y-5 text-[14px] leading-[1.8] text-[#5A5955]">
+          <div className="mx-auto max-w-[380px] space-y-5 text-[14px] leading-[1.8] text-[#9A9690]">
             <p className="text-[#E8E6E1]">
               The goal is not just a good haircut in the chair. It&apos;s hair
               that works when you&apos;re on your own.
@@ -341,7 +341,7 @@ export default function Home() {
             <p className="text-[11px] uppercase tracking-[0.2em] text-[#5A5955]">
               If:
             </p>
-            <ul className="grid gap-2 text-sm leading-relaxed text-[#5A5955] sm:grid-cols-2">
+            <ul className="grid gap-2 text-sm leading-relaxed text-[#9A9690] sm:grid-cols-2">
               <li>Your hair looks different every day</li>
               <li>Haircuts fall apart after a week</li>
               <li>Styling never feels repeatable at home</li>
@@ -369,7 +369,7 @@ export default function Home() {
                 collapses, and build the shape around that. Scissor or razor work
                 depends on what the hair needs.
               </p>
-              <p className="text-base leading-relaxed tracking-tight text-[#5A5955] md:text-lg">
+              <p className="text-base leading-relaxed tracking-tight text-[#9A9690] md:text-lg">
                 Then I walk you through how to dry it, move it, and keep it
                 working, so you are not guessing every morning.
               </p>
@@ -385,7 +385,7 @@ export default function Home() {
             <p className="section-label mb-4">
               Services
             </p>
-            <p className="mb-12 max-w-[380px] text-[14px] leading-[1.8] text-[#5A5955]">
+            <p className="mb-12 max-w-[380px] text-[14px] leading-[1.8] text-[#9A9690]">
               Choose the session that fits your hair.
             </p>
           </div>
@@ -401,10 +401,10 @@ export default function Home() {
                 <h3 className="text-[20px] font-normal tracking-[0] text-[#E8E6E1]">
                   {service.name}
                 </h3>
-                <p className="text-[14px] font-light text-[#5A5955]">
+                <p className="text-[14px] font-light text-[#9A9690]">
                   {service.price}
                 </p>
-                <p className="max-w-[580px] text-[12px] font-light leading-[1.8] text-[#5A5955]">
+                <p className="max-w-[580px] text-[12px] font-light leading-[1.8] text-[#9A9690]">
                   {service.description}
                 </p>
               </a>
@@ -421,12 +421,12 @@ export default function Home() {
                   <h2 className="text-[32px] font-normal leading-[1.2] tracking-[-0.01em] text-[#E8E6E1] md:text-[48px]">
                     Razor Cutting Education for Stylists
                   </h2>
-                  <p className="mt-5 text-[16px] leading-[1.75] text-[#5A5955] md:text-[18px]">
+                  <p className="mt-5 text-[16px] leading-[1.75] text-[#9A9690] md:text-[18px]">
                     Real-world razor cutting for stylists who want control, not chaos.
                   </p>
                 </div>
                 <div className="space-y-8">
-                  <p className="text-[16px] leading-[1.8] text-[#5A5955] md:text-[18px]">
+                  <p className="text-[16px] leading-[1.8] text-[#9A9690] md:text-[18px]">
                     This is not a technique demo or a trend workshop. It is practical
                     razor education built from 15 years of behind-the-chair work — the
                     kind of education that changes how you think about a haircut, not
@@ -440,7 +440,7 @@ export default function Home() {
                       "Adapting razor work to different hair types",
                       "Client communication and expectation setting",
                     ].map((point, i) => (
-                      <li key={i} className="flex items-start gap-4 text-[15px] leading-[1.7] text-[#5A5955]">
+                      <li key={i} className="flex items-start gap-4 text-[15px] leading-[1.7] text-[#9A9690]">
                         <span className="mt-0.5 shrink-0 text-[11px] uppercase tracking-[0.18em] text-[#5A5955]">
                           {String(i + 1).padStart(2, "0")}
                         </span>
@@ -464,7 +464,7 @@ export default function Home() {
         {/* "Also available" divider */}
         <div className="mx-auto max-w-7xl px-5 md:px-10">
           <hr className="border-white/[0.04]" />
-          <p className="mt-6 inline-block text-[10px] uppercase tracking-[0.15em] text-[#3A3935]">
+          <p className="mt-6 inline-block text-[10px] uppercase tracking-[0.15em] text-[#5A5955]">
             Also available:
           </p>
         </div>
@@ -527,7 +527,7 @@ export default function Home() {
                 version of you that actually feels right. The whole thing
                 considered: the hair, the direction, and the image.
               </p>
-              <p className="text-base text-[#5A5955] md:text-lg">
+              <p className="text-base text-[#9A9690] md:text-lg">
                 In the salon or around SoHo. Film, digital, or both. I direct it
                 so you are not left guessing.
               </p>
@@ -539,7 +539,7 @@ export default function Home() {
 
       <StickyMobileCTA />
 
-      <footer className="mx-auto flex max-w-7xl flex-col gap-4 border-t border-white/[0.04] bg-[#111110] px-5 pb-[68px] pt-10 text-[12px] text-[#3A3935] md:flex-row md:items-center md:justify-between md:px-10 md:pb-10">
+      <footer className="mx-auto flex max-w-7xl flex-col gap-4 border-t border-white/[0.04] bg-[#111110] px-5 pb-[68px] pt-10 text-[12px] text-[#5A5955] md:flex-row md:items-center md:justify-between md:px-10 md:pb-10">
         <div>
           <p>Samuel Bullen · SoHo / Downtown NYC</p>
           <p className="mt-2 text-[11px] tracking-[0.05em]">

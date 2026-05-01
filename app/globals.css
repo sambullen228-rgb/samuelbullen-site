@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+* h1, * h2, * h3, .hero-title, [class*="heading"], [class*="title"] {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-weight: 400 !important;
+}
+
 :root {
   --bg:     #111110;
   --ink:    #E8E6E1;
