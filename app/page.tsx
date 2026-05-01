@@ -177,7 +177,7 @@ export default function Home() {
         {/* Hero */}
         <section
           id="top"
-          className="mx-auto flex max-w-7xl items-center px-5 pb-14 pt-12 md:min-h-[70svh] md:items-end md:justify-between md:px-10 md:pb-14 md:pt-16"
+          className="mx-auto flex max-w-7xl items-center px-5 pb-8 pt-8 md:min-h-[70svh] md:items-end md:justify-between md:px-10 md:pb-14 md:pt-16"
         >
           <motion.div className="max-w-3xl" initial="hidden" animate="visible">
             <motion.p
@@ -228,19 +228,35 @@ export default function Home() {
                 or how to style it.
               </p>
             </motion.div>
-            <div className="mt-8 block md:hidden">
-              <div className="mx-auto aspect-[3/4] w-[55%] max-w-[200px] overflow-hidden bg-neutral-200">
+            {/* Mobile: image left, buttons right */}
+            <div className="mt-6 flex items-start gap-5 md:hidden">
+              <div className="aspect-[3/4] w-[42%] max-w-[150px] shrink-0 overflow-hidden bg-neutral-200">
                 <img
                   src="/images/me.jpg"
                   alt="Samuel Bullen hairstylist working with client in SoHo NYC"
                   className="h-full w-full object-contain"
                 />
               </div>
+              <div className="flex flex-col gap-4 pt-1">
+                <a
+                  href="#pricing"
+                  className="bg-black px-5 py-3 text-sm tracking-wide text-white transition duration-300 hover:-translate-y-px hover:opacity-85 active:opacity-70"
+                >
+                  Book Appointment
+                </a>
+                <a
+                  href="#hair"
+                  className="px-1 py-3 text-sm tracking-wide text-neutral-600 underline underline-offset-8 opacity-80 transition duration-300 hover:text-black hover:opacity-100"
+                >
+                  View Work
+                </a>
+              </div>
             </div>
+            {/* Desktop buttons */}
             <motion.div
               variants={fadeUp}
               custom={5}
-              className="mt-12 flex flex-wrap gap-5"
+              className="mt-12 hidden flex-wrap gap-5 md:flex"
             >
               <a
                 href="#pricing"
