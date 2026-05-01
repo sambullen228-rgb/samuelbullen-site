@@ -392,7 +392,7 @@ export default function Home() {
 
         {/* Approach */}
         <motion.section
-          className="mx-auto max-w-7xl px-5 py-28 md:px-10 md:py-32"
+          className="mx-auto max-w-7xl px-5 py-16 md:px-10 md:py-24"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
@@ -421,7 +421,7 @@ export default function Home() {
         </motion.section>
 
         {/* Hair Pricing */}
-        <section id="pricing" className="mx-auto max-w-7xl px-5 pb-12 pt-32 md:px-10">
+        <section id="pricing" className="mx-auto max-w-7xl px-5 pb-12 pt-16 md:px-10">
           <motion.div
             className="border-t border-[#E6E2EE] pt-8"
             variants={fadeUp}
