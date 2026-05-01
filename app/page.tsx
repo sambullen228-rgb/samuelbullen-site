@@ -170,6 +170,7 @@ export default function Home() {
           <nav className="flex gap-5 text-[10px] font-light uppercase tracking-[0.15em] text-[#6B6480] sm:gap-7 sm:text-[11px]">
             <a href="#hair" className="transition-colors duration-[350ms] hover:text-[#FF7E9D]">Hair</a>
             <a href="#pricing" className="transition-colors duration-[350ms] hover:text-[#FF7E9D]">Services</a>
+            <a href="#education" className="transition-colors duration-[350ms] hover:text-[#FF7E9D]">Education</a>
             <a href="#photography" className="transition-colors duration-[350ms] hover:text-[#FF7E9D]">Portrait Work</a>
           </nav>
         </header>
@@ -461,6 +462,62 @@ export default function Home() {
               </motion.a>
             ))}
           </div>
+        </section>
+
+        {/* Razor Cutting Education */}
+        <section id="education" className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-24">
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+          >
+            <div className="border-t border-[#E6E2EE] pt-8">
+              <p className="section-label mb-10">Razor Cutting Education</p>
+              <div className="grid gap-10 md:grid-cols-[1fr_1.4fr]">
+                <div>
+                  <h2 className="text-[32px] font-medium leading-[1.05] tracking-[-0.04em] text-[#0E0B1F] md:text-[48px]">
+                    Razor Cutting Education for Stylists
+                  </h2>
+                  <p className="mt-5 text-[16px] leading-[1.75] text-[#6B6480] md:text-[18px]">
+                    Real-world razor cutting for stylists who want control, not chaos.
+                  </p>
+                </div>
+                <div className="space-y-8">
+                  <p className="text-[16px] leading-[1.8] text-[#2A2440] md:text-[18px]">
+                    This is not a technique demo or a trend workshop. It is practical
+                    razor education built from 15 years of behind-the-chair work — the
+                    kind of education that changes how you think about a haircut, not
+                    just how you hold a tool.
+                  </p>
+                  <ul className="space-y-4 border-t border-[#E6E2EE] pt-6">
+                    {[
+                      "Controlling weight and texture with a razor",
+                      "When to use a razor vs scissors — and when not to",
+                      "Building cuts that grow out properly",
+                      "Adapting razor work to different hair types",
+                      "Client communication and expectation setting",
+                    ].map((point, i) => (
+                      <li key={i} className="flex items-start gap-4 text-[15px] leading-[1.7] text-[#2A2440]">
+                        <span className="mt-0.5 shrink-0 text-[11px] uppercase tracking-[0.18em] text-[#6B6480]">
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="pt-2">
+                    <a
+                      href="mailto:sambullen228@gmail.com?subject=Razor%20Cutting%20Education%20Inquiry"
+                      className="btn-gradient inline-block"
+                    >
+                      Request Education Info
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </section>
 
         {/* "Also available" divider */}
