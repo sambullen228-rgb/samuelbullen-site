@@ -130,7 +130,7 @@ export default function Home() {
       <main className="min-h-screen bg-[#111110] text-[#E8E6E1]">
         {/* Announcement bar */}
         {!announcementDismissed && (
-          <div className="relative flex h-10 items-center justify-center bg-[#111110] px-10">
+          <div className="relative flex min-h-10 items-center justify-center bg-[#111110] px-10 py-3">
             <p className="text-center text-[11px] uppercase tracking-[0.1em] text-[#9A9690]">
               Now booking new clients. Start with the service that fits your hair.{" "}
               <a
