@@ -150,7 +150,7 @@ export default function Home() {
                 href="#pricing"
                 className="text-white underline underline-offset-2 transition-opacity hover:opacity-75"
               >
-                Choose →
+                Book →
               </a>
             </p>
             <button
@@ -237,7 +237,7 @@ export default function Home() {
                 href="#pricing"
                 className="bg-black px-5 py-3 text-sm tracking-wide text-white transition duration-300 hover:-translate-y-px hover:opacity-85 active:opacity-70"
               >
-                Choose Your Service
+                Book Now
               </a>
               <a
                 href="#hair"

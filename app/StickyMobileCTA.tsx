@@ -23,7 +23,7 @@ export default function StickyMobileCTA() {
         href="#pricing"
         className="flex h-full w-full items-center justify-center text-sm tracking-wide text-black"
       >
-        Choose Your Service
+        Book Now
         <span className="block text-[10px] font-normal uppercase tracking-[0.16em] opacity-70">
           Tap to book
         </span>
