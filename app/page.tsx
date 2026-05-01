@@ -229,7 +229,7 @@ export default function Home() {
               </p>
             </motion.div>
             <div className="mt-8 block md:hidden">
-              <div className="aspect-[3/4] w-full overflow-hidden bg-neutral-200">
+              <div className="mx-auto aspect-[3/4] w-[55%] max-w-[200px] overflow-hidden bg-neutral-200">
                 <img
                   src="/images/me.jpg"
                   alt="Samuel Bullen hairstylist working with client in SoHo NYC"
