@@ -228,6 +228,16 @@ export default function Home() {
                 or how to style it.
               </p>
             </motion.div>
+            <div className="mt-8 block md:hidden">
+              <div className="aspect-[5/3] w-full overflow-hidden bg-neutral-200">
+                <img
+                  src="/images/me.jpg"
+                  alt="Samuel Bullen hairstylist working with client in SoHo NYC"
+                  className="h-full w-full object-cover"
+                  style={{ objectPosition: "center 20%" }}
+                />
+              </div>
+            </div>
             <motion.div
               variants={fadeUp}
               custom={5}
