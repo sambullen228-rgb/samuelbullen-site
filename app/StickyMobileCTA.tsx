@@ -14,20 +14,16 @@ export default function StickyMobileCTA() {
 
   return (
     <div
-      className={`fixed bottom-0 left-0 right-0 z-50 border-t border-[#D4CFC8] bg-[#F7F4EF] transition-transform duration-[350ms] ease-out md:hidden ${
+      className={`fixed bottom-0 left-0 right-0 z-50 border-t border-[#E6E2EE] bg-[#FAFAFC]/95 backdrop-blur transition-transform duration-[400ms] ease-out md:hidden ${
         visible ? "translate-y-0" : "translate-y-full"
       }`}
-      style={{ height: "60px" }}
+      style={{ height: "64px" }}
     >
-      <a
-        href="#pricing"
-        className="flex h-full w-full flex-col items-center justify-center text-[14px] font-light tracking-[0.06em] text-[#B5785A] transition duration-[350ms]"
-      >
-        Book Now
-        <span className="mt-0.5 block text-[9px] font-light uppercase tracking-[0.2em] text-[#8C8880]">
-          Tap to book
-        </span>
-      </a>
+      <div className="flex h-full items-center justify-center px-4">
+        <a href="#pricing" className="btn-gradient w-full text-center">
+          Book Now
+        </a>
+      </div>
     </div>
   );
 }

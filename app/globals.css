@@ -1,19 +1,26 @@
 @import "tailwindcss";
 
 :root {
-  --paper:      #F7F4EF;
-  --paper-warm: #EDE9E1;
-  --ink:        #1C1C1A;
-  --mute:       #8C8880;
-  --clay:       #B5785A;
-  --line:       #D4CFC8;
+  --bg:        #FAFAFC;
+  --bg-soft:   #F3F1F8;
+  --ink:       #0E0B1F;
+  --ink-soft:  #2A2440;
+  --mute:      #6B6480;
+  --line:      #E6E2EE;
+
+  --g-peach:   #FFB088;
+  --g-coral:   #FF7E9D;
+  --g-violet:  #B57AFF;
+  --g-blue:    #7AA8FF;
+
+  --gradient-primary:
+    linear-gradient(135deg, var(--g-peach) 0%, var(--g-coral) 45%, var(--g-violet) 100%);
 }
 
 @theme inline {
-  --color-background: var(--paper);
+  --color-background: var(--bg);
   --color-foreground: var(--ink);
   --font-sans: var(--font-geist-sans);
-  --font-serif: var(--font-serif);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -22,99 +29,165 @@ html {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
+  html { scroll-behavior: auto; }
 }
 
 body {
-  background: var(--paper);
+  background: var(--bg);
   color: var(--ink);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  line-height: 1.8;
+  font-weight: 400;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3 {
-  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
-  font-weight: 300;
-  letter-spacing: -0.01em;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: var(--ink);
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  transition: color 0.35s ease;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a:hover {
-  color: var(--clay);
+  color: var(--g-coral);
 }
 
-/* Section label — small caps with whisper-rule above */
+/* ── Section label ───────────────────────────────────── */
 .section-label {
   display: inline-block;
   font-family: var(--font-geist-sans), Arial, sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   color: var(--mute);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .section-label::before {
   content: "";
   display: block;
-  width: 40px;
-  height: 1px;
-  background: var(--line);
+  width: 32px;
+  height: 2px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
   margin-bottom: 14px;
 }
 
-/* Outlined accent button — Japandi terracotta */
-.btn-accent {
+/* ── Gradient text ──────────────────────────────────── */
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+          color: transparent;
+}
+
+/* ── Gradient button ────────────────────────────────── */
+.btn-gradient {
   display: inline-block;
   padding: 14px 36px;
-  border: 1px solid var(--clay);
-  background: transparent;
-  color: var(--clay);
+  border: none;
+  border-radius: 999px;
+  background: var(--gradient-primary);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  color: #fff;
   font-family: var(--font-geist-sans), Arial, sans-serif;
   font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.06em;
+  font-weight: 500;
+  letter-spacing: 0.03em;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: none;
-  transition: background 0.4s ease, color 0.4s ease;
+  box-shadow: 0 4px 24px -8px rgba(255, 126, 157, 0.35);
+  transition:
+    background-position 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-accent:hover {
-  background: var(--clay);
-  color: var(--paper);
+.btn-gradient:hover {
+  background-position: 100% 50%;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 32px -8px rgba(181, 122, 255, 0.45);
+  color: #fff;
 }
 
-/* Photo veil — subtle warm sepia, lifted on hover */
-.photo-veil {
-  filter: sepia(8%) contrast(96%) brightness(101%);
-  transition: filter 0.5s ease, transform 0.9s ease-out;
+/* ── Aurora hero bloom ──────────────────────────────── */
+.aurora-bg {
+  position: relative;
+  overflow: hidden;
 }
 
-.group:hover .photo-veil {
-  filter: none;
+.aurora-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 720px 520px at 82% 12%, rgba(255, 126, 157, 0.22) 0%, transparent 65%),
+    radial-gradient(ellipse 600px 700px at 8%  78%, rgba(181, 122, 255, 0.16) 0%, transparent 65%),
+    radial-gradient(ellipse 500px 400px at 50% 100%, rgba(122, 168, 255, 0.10) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
 }
 
-/* Service row hover — warm subtle wash */
+.aurora-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Section atmosphere washes (no hard borders) ────── */
+.section-warm {
+  background:
+    linear-gradient(180deg,
+      transparent 0%,
+      rgba(255, 176, 136, 0.05) 35%,
+      rgba(255, 126, 157, 0.04) 70%,
+      transparent 100%);
+}
+
+.section-cool {
+  background:
+    linear-gradient(180deg,
+      transparent 0%,
+      rgba(181, 122, 255, 0.05) 40%,
+      rgba(122, 168, 255, 0.04) 75%,
+      transparent 100%);
+}
+
+/* ── Photo treatment ────────────────────────────────── */
+.photo-grad {
+  filter: saturate(0.92);
+  transition:
+    filter 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.group:hover .photo-grad {
+  filter: saturate(1.1);
+}
+
+/* ── Service rows: gradient hover wash ──────────────── */
 .service-row {
-  transition: background 0.35s ease;
+  transition: background 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
 }
 
 .service-row:hover {
-  background: var(--paper-warm);
+  background:
+    linear-gradient(90deg,
+      rgba(255, 176, 136, 0.07) 0%,
+      rgba(255, 126, 157, 0.06) 50%,
+      rgba(181, 122, 255, 0.07) 100%);
 }
 
-/* Marquee */
+/* ── Marquee ────────────────────────────────────────── */
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
