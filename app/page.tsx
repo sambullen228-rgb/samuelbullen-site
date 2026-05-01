@@ -140,22 +140,22 @@ export default function Home() {
 
   return (
     <>
-      <main className="min-h-screen bg-[#f7f5f0] text-black tracking-tight">
+      <main className="min-h-screen bg-[#F7F4EF] text-[#1C1C1A] tracking-tight">
         {/* Announcement bar */}
         {!announcementDismissed && (
-          <div className="relative flex h-10 items-center justify-center bg-neutral-900 px-10">
-            <p className="text-center text-[11px] uppercase tracking-[0.1em] text-neutral-300">
+          <div className="relative flex h-10 items-center justify-center bg-[#1C1C1A] px-10">
+            <p className="text-center text-[11px] uppercase tracking-[0.1em] text-[#D4CFC8]/90">
               Now booking new clients. Start with the service that fits your hair.{" "}
               <a
                 href="#pricing"
-                className="text-white underline underline-offset-2 transition-opacity hover:opacity-75"
+                className="text-[#F7F4EF] underline underline-offset-4 decoration-[#B5785A] transition duration-[350ms] hover:text-[#B5785A]"
               >
                 Book Appointment →
               </a>
             </p>
             <button
               onClick={() => setAnnouncementDismissed(true)}
-              className="absolute right-4 text-neutral-400 transition-colors hover:text-white md:hidden"
+              className="absolute right-4 text-[#8C8880] transition-colors duration-[350ms] hover:text-[#F7F4EF] md:hidden"
               aria-label="Dismiss"
             >
               ✕
@@ -164,13 +164,13 @@ export default function Home() {
         )}
 
         <header className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-10">
-          <a href="#top" className="text-sm tracking-[0.2em] transition-opacity duration-200 hover:opacity-50">
+          <a href="#top" className="text-sm font-light tracking-[0.2em] text-[#1C1C1A] transition duration-[350ms] hover:text-[#B5785A]">
             SB
           </a>
-          <nav className="flex gap-4 text-[10px] uppercase tracking-[0.16em] text-neutral-500 sm:gap-5 sm:text-xs sm:tracking-[0.18em]">
-            <a href="#hair" className="transition-colors duration-200 hover:text-black">Hair</a>
-            <a href="#pricing" className="transition-colors duration-200 hover:text-black">Services</a>
-            <a href="#photography" className="transition-colors duration-200 hover:text-black">Portrait Work</a>
+          <nav className="flex gap-5 text-[10px] font-light uppercase tracking-[0.15em] text-[#8C8880] sm:gap-7 sm:text-[11px]">
+            <a href="#hair" className="transition-colors duration-[350ms] hover:text-[#B5785A]">Hair</a>
+            <a href="#pricing" className="transition-colors duration-[350ms] hover:text-[#B5785A]">Services</a>
+            <a href="#photography" className="transition-colors duration-[350ms] hover:text-[#B5785A]">Portrait Work</a>
           </nav>
         </header>
 
@@ -183,14 +183,14 @@ export default function Home() {
             <motion.p
               variants={fadeUp}
               custom={0}
-              className="mb-5 text-xs uppercase tracking-[0.22em] text-neutral-500"
+              className="mb-6 text-[11px] uppercase tracking-[0.2em] text-[#8C8880]"
             >
               Hard-to-Manage Hair Specialist
             </motion.p>
             <motion.h1
               variants={fadeUp}
               custom={1}
-              className="max-w-2xl text-[48px] font-medium leading-[0.88] tracking-[-0.085em] md:text-[112px]"
+              className="mt-2 max-w-2xl text-[58px] font-light leading-[0.92] tracking-[-0.04em] md:mt-3 md:text-[134px]"
             >
               Hair that finally works.
             </motion.h1>
@@ -200,20 +200,20 @@ export default function Home() {
             <motion.p
               variants={fadeUp}
               custom={2}
-              className="mt-5 text-xs uppercase tracking-[0.22em] text-neutral-500"
+              className="mt-6 text-[11px] uppercase tracking-[0.2em] text-[#8C8880]"
             >
               SoHo / Downtown NYC
             </motion.p>
             <motion.div
               variants={fadeUp}
               custom={4}
-              className="mt-9 max-w-lg space-y-5 text-[17px] leading-[1.65] text-neutral-500 md:mt-11 md:text-[20px]"
+              className="mt-9 max-w-lg space-y-5 text-[17px] leading-[1.65] text-[#8C8880] md:mt-11 md:text-[20px]"
             >
               <div>
-                <p className="text-[22px] font-medium leading-tight tracking-[-0.03em] text-black md:text-[30px]">
+                <p className="font-serif text-[26px] font-light leading-tight tracking-[-0.01em] text-[#1C1C1A] md:text-[34px]">
                   Hair is a fabric.
                 </p>
-                <p className="mt-3 text-[16px] leading-relaxed text-neutral-500 md:text-[18px]">
+                <p className="mt-4 text-[16px] leading-[1.8] text-[#8C8880] md:text-[18px]">
                   It needs to be treated like one. You wouldn&apos;t treat silk like wool, would you?
                 </p>
               </div>
@@ -240,13 +240,13 @@ export default function Home() {
               <div className="flex flex-col gap-4 pt-1">
                 <a
                   href="#pricing"
-                  className="bg-black px-5 py-3 text-sm tracking-wide text-white transition duration-300 hover:-translate-y-px hover:opacity-85 active:opacity-70"
+                  className="btn-accent"
                 >
                   Book Appointment
                 </a>
                 <a
                   href="#hair"
-                  className="px-1 py-3 text-sm tracking-wide text-neutral-600 underline underline-offset-8 opacity-80 transition duration-300 hover:text-black hover:opacity-100"
+                  className="px-1 py-3 text-sm tracking-[0.05em] text-[#8C8880] underline decoration-[#D4CFC8] underline-offset-8 transition duration-[350ms] hover:text-[#B5785A] hover:decoration-[#B5785A]"
                 >
                   View Work
                 </a>
@@ -260,13 +260,13 @@ export default function Home() {
             >
               <a
                 href="#pricing"
-                className="bg-black px-5 py-3 text-sm tracking-wide text-white transition duration-300 hover:-translate-y-px hover:opacity-85 active:opacity-70"
+                className="btn-accent"
               >
                 Book Appointment
               </a>
               <a
                 href="#hair"
-                className="px-1 py-3 text-sm tracking-wide text-neutral-600 underline underline-offset-8 opacity-80 transition duration-300 hover:text-black hover:opacity-100"
+                className="px-1 py-3 text-sm tracking-[0.05em] text-[#8C8880] underline decoration-[#D4CFC8] underline-offset-8 transition duration-[350ms] hover:text-[#B5785A] hover:decoration-[#B5785A]"
               >
                 View Work
               </a>
@@ -291,12 +291,12 @@ export default function Home() {
         </section>
 
         {/* Credibility bar */}
-        <div className="mx-auto max-w-7xl px-5 py-8 md:px-10">
-          <div className="flex flex-col items-center gap-5 sm:flex-row sm:justify-center sm:gap-0 sm:divide-x sm:divide-neutral-300">
+        <div className="mx-auto max-w-7xl px-5 py-12 md:px-10">
+          <div className="flex flex-col items-center gap-5 sm:flex-row sm:justify-center sm:gap-0 sm:divide-x sm:divide-[#D4CFC8]">
             {["15 Years Experience", "SoHo / Downtown NYC", "Hair + Portraits"].map((stat) => (
               <span
                 key={stat}
-                className="text-center text-[11px] uppercase tracking-[0.2em] text-neutral-400 sm:px-8"
+                className="text-center text-[10px] uppercase tracking-[0.2em] text-[#8C8880] sm:px-10"
               >
                 {stat}
               </span>
@@ -305,13 +305,13 @@ export default function Home() {
         </div>
 
         {/* Marquee */}
-        <div className="overflow-hidden border-y border-neutral-300 bg-[#f7f5f0] py-3">
+        <div className="overflow-hidden border-y border-[#D4CFC8] bg-[#F7F4EF] py-3">
           <div className="animate-marquee flex w-max whitespace-nowrap">
-            <span className="px-10 text-[11px] uppercase tracking-[0.22em] text-neutral-400">
+            <span className="px-10 text-[11px] uppercase tracking-[0.2em] text-[#8C8880]">
               {marqueeContent}
             </span>
             <span
-              className="px-10 text-[11px] uppercase tracking-[0.22em] text-neutral-400"
+              className="px-10 text-[11px] uppercase tracking-[0.2em] text-[#8C8880]"
               aria-hidden="true"
             >
               {marqueeContent}
@@ -320,61 +320,63 @@ export default function Home() {
         </div>
 
         {/* Why Sam */}
+        <div className="bg-[#EDE9E1]">
         <motion.section
-          className="mx-auto max-w-7xl px-5 py-16 md:px-10 md:py-20"
+          className="mx-auto max-w-7xl px-5 py-24 md:px-10 md:py-28"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
         >
-          <div className="grid grid-cols-1 divide-y divide-neutral-200 border-t border-neutral-300 md:grid-cols-3 md:divide-x md:divide-y-0">
+          <div className="grid grid-cols-1 divide-y divide-[#D4CFC8] border-t border-[#D4CFC8] md:grid-cols-3 md:divide-x md:divide-y-0">
             <div className="py-10 md:py-8 md:pr-10">
-              <h3 className="mb-3 text-[15px] font-semibold tracking-[-0.01em]">
+              <h3 className="mb-4 text-[20px] font-light tracking-[-0.01em] text-[#1C1C1A]">
                 15 Years, Zero Guesswork
               </h3>
-              <p className="text-sm leading-relaxed text-neutral-500">
+              <p className="text-[14px] leading-[1.8] text-[#8C8880]">
                 I&apos;ve spent 15 years studying how hair moves, grows, and behaves.
                 No trends for the sake of trends.
               </p>
             </div>
             <div className="py-10 md:px-10 md:py-8">
-              <h3 className="mb-3 text-[15px] font-semibold tracking-[-0.01em]">
+              <h3 className="mb-4 text-[20px] font-light tracking-[-0.01em] text-[#1C1C1A]">
                 Cut For Real Life
               </h3>
-              <p className="text-sm leading-relaxed text-neutral-500">
+              <p className="text-[14px] leading-[1.8] text-[#8C8880]">
                 The cut is built around how your hair actually lives after you leave, not just how it looks in the chair.
               </p>
             </div>
             <div className="py-10 md:pl-10 md:py-8">
-              <h3 className="mb-3 text-[15px] font-semibold tracking-[-0.01em]">
+              <h3 className="mb-4 text-[20px] font-light tracking-[-0.01em] text-[#1C1C1A]">
                 SoHo / Downtown NYC
               </h3>
-              <p className="text-sm leading-relaxed text-neutral-500">
+              <p className="text-[14px] leading-[1.8] text-[#8C8880]">
                 Located at 469 Broadway, 4th floor. New clients welcome. No
                 referral needed.
               </p>
             </div>
           </div>
         </motion.section>
+        </div>
 
         {/* Hair Work */}
-        <section id="hair" className="mx-auto max-w-7xl px-5 pb-12 pt-20 md:px-10 md:pb-14 md:pt-24">
+        <section id="hair" className="mx-auto max-w-7xl px-5 pb-16 pt-28 md:px-10 md:pb-20 md:pt-32">
           <motion.div
-            className="mb-12 flex flex-col justify-between gap-6 border-t border-neutral-300 pt-8 md:flex-row"
+            className="mb-12 flex flex-col justify-between gap-6 border-t border-[#D4CFC8] pt-8 md:flex-row"
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
           >
-            <p className="text-xs uppercase tracking-[0.22em] text-neutral-500">
+            <p className="section-label">
               Hair Work — SoHo NYC
             </p>
-            <h2 className="max-w-2xl text-[32px] font-medium leading-[1.05] tracking-[-0.04em] md:text-[56px]">
+            <h2 className="max-w-2xl text-[36px] font-light leading-[1.1] tracking-[-0.02em] md:text-[60px]">
               Real hair. Real texture. Cuts built to keep working.
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-2 gap-x-4 gap-y-9 sm:gap-x-5 sm:gap-y-12 lg:grid-cols-3">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-14 sm:gap-x-8 sm:gap-y-[4.5rem] lg:grid-cols-3">
             {workCaptions.map((caption, index) => (
               <motion.figure
                 key={caption}
@@ -393,7 +395,7 @@ export default function Home() {
                     className="h-full w-full object-cover transition duration-900 ease-out group-hover:scale-[1.02]"
                   />
                 </div>
-                <figcaption className="mt-2 translate-y-0 text-[11px] text-neutral-500 opacity-80 transition duration-300 group-hover:-translate-y-0.5 group-hover:opacity-100 sm:text-xs">
+                <figcaption className="mt-3 text-[10px] uppercase tracking-[0.18em] text-[#8C8880] transition duration-[350ms] group-hover:text-[#1C1C1A] sm:text-[11px]">
                   {caption}
                 </figcaption>
               </motion.figure>
@@ -409,15 +411,15 @@ export default function Home() {
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
         >
-          <div className="max-w-xl space-y-5 text-[17px] leading-[1.65] text-neutral-500 md:text-[20px]">
+          <div className="mx-auto max-w-[580px] space-y-5 text-[17px] leading-[1.8] text-[#8C8880] md:text-[20px]">
             <p className="text-black">
               The goal is not just a good haircut in the chair. It&apos;s hair
               that works when you&apos;re on your own.
             </p>
-            <p className="text-sm uppercase tracking-[0.18em] text-neutral-500">
+            <p className="text-[11px] uppercase tracking-[0.2em] text-[#8C8880]">
               If:
             </p>
-            <ul className="grid gap-2 text-sm leading-relaxed text-neutral-600 sm:grid-cols-2">
+            <ul className="grid gap-2 text-sm leading-relaxed text-[#5A574F] sm:grid-cols-2">
               <li>Your hair looks different every day</li>
               <li>Haircuts fall apart after a week</li>
               <li>Styling never feels repeatable at home</li>
@@ -429,18 +431,18 @@ export default function Home() {
 
         {/* Approach */}
         <motion.section
-          className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-24"
+          className="mx-auto max-w-7xl px-5 py-28 md:px-10 md:py-32"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
         >
-          <div className="grid gap-10 border-t border-neutral-300 pt-8 md:grid-cols-[0.8fr_1.2fr]">
-            <p className="text-xs uppercase tracking-[0.22em] text-neutral-500">
+          <div className="grid gap-10 border-t border-[#D4CFC8] pt-8 md:grid-cols-[0.8fr_1.2fr]">
+            <p className="section-label">
               Approach
             </p>
-            <div className="max-w-3xl space-y-7 text-[22px] leading-[1.42] tracking-[-0.03em] md:text-[38px] md:leading-[1.38]">
-              <p className="font-semibold">
+            <div className="max-w-3xl space-y-7 font-serif text-[24px] font-light leading-[1.5] tracking-[-0.01em] md:text-[40px] md:leading-[1.4]">
+              <p className="font-normal">
                 Most haircuts fail because they ignore how your hair actually
                 behaves.
               </p>
@@ -449,7 +451,7 @@ export default function Home() {
                 collapses, and build the shape around that. Scissor or razor work
                 depends on what the hair needs.
               </p>
-              <p className="text-base leading-relaxed tracking-tight text-neutral-500 md:text-lg">
+              <p className="text-base leading-relaxed tracking-tight text-[#8C8880] md:text-lg">
                 Then I walk you through how to dry it, move it, and keep it
                 working, so you are not guessing every morning.
               </p>
@@ -458,22 +460,22 @@ export default function Home() {
         </motion.section>
 
         {/* Hair Pricing */}
-        <section id="pricing" className="mx-auto max-w-7xl px-5 pb-8 pt-24 md:px-10">
+        <section id="pricing" className="mx-auto max-w-7xl px-5 pb-12 pt-32 md:px-10">
           <motion.div
-            className="border-t border-neutral-300 pt-8"
+            className="border-t border-[#D4CFC8] pt-8"
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
           >
-            <p className="mb-4 text-xs uppercase tracking-[0.22em] text-neutral-500">
+            <p className="section-label mb-4">
               Services
             </p>
-            <p className="mb-8 max-w-xl text-[18px] leading-relaxed text-neutral-600 md:text-[20px]">
+            <p className="mb-12 max-w-[580px] text-[17px] leading-[1.8] text-[#5A574F] md:text-[19px]">
               Choose the session that fits your hair.
             </p>
           </motion.div>
-          <div className="divide-y divide-neutral-300 border-y border-neutral-300">
+          <div className="divide-y divide-[#D4CFC8] border-y border-[#D4CFC8]">
             {services.map((service, index) => (
               <motion.a
                 key={service.name}
@@ -485,15 +487,15 @@ export default function Home() {
                 whileInView="visible"
                 viewport={{ once: true, margin: "-40px" }}
                 custom={index}
-                className="grid cursor-pointer gap-6 py-9 transition duration-200 hover:bg-neutral-100 md:grid-cols-[1.1fr_0.85fr_1.55fr] md:items-start md:gap-10"
+                className="service-row grid cursor-pointer gap-6 px-2 py-12 md:grid-cols-[1.1fr_0.85fr_1.55fr] md:items-start md:gap-10 md:px-4"
               >
-                <h3 className="text-[24px] font-medium tracking-[-0.03em]">
+                <h3 className="text-[26px] font-light tracking-[0.02em] text-[#1C1C1A]">
                   {service.name}
                 </h3>
-                <p className="text-[15px] font-medium uppercase tracking-[0.12em] text-black md:text-base">
+                <p className="text-[13px] font-normal uppercase tracking-[0.18em] text-[#B5785A] md:text-sm">
                   {service.price}
                 </p>
-                <p className="max-w-xl text-[16px] leading-relaxed text-neutral-600">
+                <p className="max-w-[580px] text-[15px] leading-[1.8] text-[#5A574F]">
                   {service.description}
                 </p>
               </motion.a>
@@ -503,57 +505,59 @@ export default function Home() {
 
         {/* "Also available" divider */}
         <div className="mx-auto max-w-7xl px-5 md:px-10">
-          <hr className="border-neutral-300" />
-          <p className="mt-5 text-xs uppercase tracking-[0.22em] text-neutral-400">
+          <hr className="border-[#D4CFC8]" />
+          <p className="mt-6 inline-block text-[10px] uppercase tracking-[0.2em] text-[#8C8880]">
             Also available:
           </p>
         </div>
 
         {/* Hair + Portrait intro */}
+        <div className="bg-[#EDE9E1]">
         <motion.section
-          className="mx-auto max-w-7xl px-5 pb-20 pt-8 md:px-10 md:pb-24 md:pt-10"
+          className="mx-auto max-w-7xl px-5 pb-28 pt-12 md:px-10 md:pb-32 md:pt-14"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
         >
           <div className="grid gap-10 pt-6 md:grid-cols-[0.8fr_1.2fr]">
-            <p className="text-xs uppercase tracking-[0.22em] text-neutral-500">
+            <p className="section-label">
               Hair + Portrait
             </p>
-            <div className="max-w-3xl space-y-6 text-[20px] leading-[1.5] tracking-[-0.02em] md:text-[28px]">
-              <p className="font-medium">
+            <div className="max-w-3xl space-y-6 font-serif text-[22px] font-light leading-[1.55] tracking-[-0.01em] md:text-[30px]">
+              <p className="font-light">
                 A haircut or styling session, then portraits built around the
                 version of you that actually feels right. The whole thing
                 considered: the hair, the direction, and the image.
               </p>
-              <p className="text-base text-neutral-600 md:text-lg">
+              <p className="text-base text-[#5A574F] md:text-lg">
                 In the salon or around SoHo. Film, digital, or both. I direct it
                 so you are not left guessing.
               </p>
             </div>
           </div>
         </motion.section>
+        </div>
 
         {/* Portrait Work */}
-        <section id="photography" className="mx-auto max-w-7xl px-5 py-14 md:px-10 md:py-16">
+        <section id="photography" className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-24">
           <motion.div
-            className="mb-8 grid gap-4 border-t border-neutral-300 pt-8 md:grid-cols-[0.8fr_1.2fr]"
+            className="mb-8 grid gap-4 border-t border-[#D4CFC8] pt-8 md:grid-cols-[0.8fr_1.2fr]"
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
           >
-            <p className="text-xs uppercase tracking-[0.22em] text-neutral-500">
+            <p className="section-label">
               Selected Portraits
             </p>
-            <p className="max-w-2xl text-[22px] font-medium leading-[1.45] tracking-[-0.035em] md:text-[34px]">
+            <p className="max-w-2xl text-[24px] font-light leading-[1.45] tracking-[-0.01em] md:text-[36px]">
               Portraits that feel like you on your best day. Natural, intentional,
               and directed just enough so you&apos;re not left wondering what to do.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 gap-x-4 gap-y-9 sm:gap-x-5 sm:gap-y-12 lg:grid-cols-3">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-14 sm:gap-x-8 sm:gap-y-[4.5rem] lg:grid-cols-3">
             {portraitImageSources.map((_, index) => (
               <motion.figure
                 key={portraitImageSources[index]}
@@ -572,7 +576,7 @@ export default function Home() {
                     className="h-full w-full object-cover transition duration-900 ease-out group-hover:scale-[1.02]"
                   />
                 </div>
-                <figcaption className="mt-2 block translate-y-0 text-[11px] leading-tight text-neutral-500 opacity-80 transition duration-300 group-hover:-translate-y-0.5 group-hover:opacity-100 sm:text-xs">
+                <figcaption className="mt-3 block text-[10px] uppercase tracking-[0.18em] leading-tight text-[#8C8880] transition duration-[350ms] group-hover:text-[#1C1C1A] sm:text-[11px]">
                   {photoCaptions[index]}
                 </figcaption>
               </motion.figure>
@@ -581,7 +585,7 @@ export default function Home() {
           <div className="mt-6 text-center">
             <a
               href="mailto:sambullen228@gmail.com?subject=Portrait%20Inquiry"
-              className="inline-block bg-black px-5 py-3 text-sm tracking-wide text-white transition duration-300 hover:-translate-y-px hover:opacity-85 active:opacity-70"
+              className="btn-accent"
             >
               Inquire About Portrait Work
             </a>
@@ -592,10 +596,10 @@ export default function Home() {
 
       <StickyMobileCTA />
 
-      <footer className="mx-auto flex max-w-7xl flex-col gap-4 border-t border-neutral-300 bg-[#f7f5f0] px-5 pb-[68px] pt-10 text-sm text-neutral-500 md:flex-row md:items-center md:justify-between md:px-10 md:pb-10">
+      <footer className="mx-auto flex max-w-7xl flex-col gap-4 border-t border-[#D4CFC8] bg-[#F7F4EF] px-5 pb-[68px] pt-10 text-sm text-[#8C8880] md:flex-row md:items-center md:justify-between md:px-10 md:pb-10">
         <div>
           <p>Samuel Bullen · SoHo / Downtown NYC</p>
-          <p className="mt-1 text-xs text-neutral-400">
+          <p className="mt-2 text-[11px] text-[#8C8880] tracking-[0.05em]">
             469 Broadway, 4th Floor, New York, NY
           </p>
         </div>

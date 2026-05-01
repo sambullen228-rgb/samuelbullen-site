@@ -1,22 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --paper:      #F7F4EF;
+  --paper-warm: #EDE9E1;
+  --ink:        #1C1C1A;
+  --mute:       #8C8880;
+  --clay:       #B5785A;
+  --line:       #D4CFC8;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--paper);
+  --color-foreground: var(--ink);
   --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-serif);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 html {
@@ -30,11 +28,93 @@ html {
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+h1, h2, h3 {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.35s ease;
+}
+
+a:hover {
+  color: var(--clay);
+}
+
+/* Section label — small caps with whisper-rule above */
+.section-label {
+  display: inline-block;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--mute);
+  font-weight: 400;
+}
+
+.section-label::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--line);
+  margin-bottom: 14px;
+}
+
+/* Outlined accent button — Japandi terracotta */
+.btn-accent {
+  display: inline-block;
+  padding: 14px 36px;
+  border: 1px solid var(--clay);
+  background: transparent;
+  color: var(--clay);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.btn-accent:hover {
+  background: var(--clay);
+  color: var(--paper);
+}
+
+/* Photo veil — subtle warm sepia, lifted on hover */
+.photo-veil {
+  filter: sepia(8%) contrast(96%) brightness(101%);
+  transition: filter 0.5s ease, transform 0.9s ease-out;
+}
+
+.group:hover .photo-veil {
+  filter: none;
+}
+
+/* Service row hover — warm subtle wash */
+.service-row {
+  transition: background 0.35s ease;
+}
+
+.service-row:hover {
+  background: var(--paper-warm);
+}
+
+/* Marquee */
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
