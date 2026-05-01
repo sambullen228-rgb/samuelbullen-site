@@ -192,7 +192,7 @@ export default function Home() {
               custom={1}
               className="mt-2 max-w-2xl text-[58px] font-medium leading-[0.92] tracking-[-0.045em] md:mt-3 md:text-[134px]"
             >
-              Hair that finally <span className="gradient-text">works.</span>
+              Hair that works with you, not against you.
             </motion.h1>
             <p className="sr-only">
               SoHo NYC hairstylist specializing in hard-to-manage hair, texture, and natural movement.
@@ -293,7 +293,7 @@ export default function Home() {
         {/* Credibility bar */}
         <div className="mx-auto max-w-7xl px-5 py-12 md:px-10">
           <div className="flex flex-col items-center gap-5 sm:flex-row sm:justify-center sm:gap-0 sm:divide-x sm:divide-[#E6E2EE]">
-            {["15 Years Experience", "SoHo / Downtown NYC", "Hair + Portraits"].map((stat) => (
+            {["15 Years Experience", "469 Broadway, 4th Floor, New York, NY", "Hair + Portraits"].map((stat) => (
               <span
                 key={stat}
                 className="text-center text-[10px] uppercase tracking-[0.2em] text-[#6B6480] sm:px-10"
@@ -317,46 +317,6 @@ export default function Home() {
               {marqueeContent}
             </span>
           </div>
-        </div>
-
-        {/* Why Sam */}
-        <div className="section-cool">
-        <motion.section
-          className="mx-auto max-w-7xl px-5 py-24 md:px-10 md:py-28"
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
-        >
-          <div className="grid grid-cols-1 divide-y divide-[#E6E2EE] border-t border-[#E6E2EE] md:grid-cols-3 md:divide-x md:divide-y-0">
-            <div className="py-10 md:py-8 md:pr-10">
-              <h3 className="mb-4 text-[18px] font-semibold tracking-[-0.02em] text-[#0E0B1F]">
-                15 Years, Zero Guesswork
-              </h3>
-              <p className="text-[14px] leading-[1.8] text-[#6B6480]">
-                I&apos;ve spent 15 years studying how hair moves, grows, and behaves.
-                No trends for the sake of trends.
-              </p>
-            </div>
-            <div className="py-10 md:px-10 md:py-8">
-              <h3 className="mb-4 text-[18px] font-semibold tracking-[-0.02em] text-[#0E0B1F]">
-                Cut For Real Life
-              </h3>
-              <p className="text-[14px] leading-[1.8] text-[#6B6480]">
-                The cut is built around how your hair actually lives after you leave, not just how it looks in the chair.
-              </p>
-            </div>
-            <div className="py-10 md:pl-10 md:py-8">
-              <h3 className="mb-4 text-[18px] font-semibold tracking-[-0.02em] text-[#0E0B1F]">
-                SoHo / Downtown NYC
-              </h3>
-              <p className="text-[14px] leading-[1.8] text-[#6B6480]">
-                Located at 469 Broadway, 4th floor. New clients welcome. No
-                referral needed.
-              </p>
-            </div>
-          </div>
-        </motion.section>
         </div>
 
         {/* Hair Work */}
