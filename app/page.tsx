@@ -528,34 +528,6 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Hair + Portrait intro */}
-        <div className="section-cool">
-        <motion.section
-          className="mx-auto max-w-7xl px-5 pb-28 pt-12 md:px-10 md:pb-32 md:pt-14"
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
-        >
-          <div className="grid gap-10 pt-6 md:grid-cols-[0.8fr_1.2fr]">
-            <p className="section-label">
-              Hair + Portrait
-            </p>
-            <div className="max-w-3xl space-y-6 text-[22px] font-normal leading-[1.45] tracking-[-0.02em] md:text-[32px]">
-              <p className="font-light">
-                A haircut or styling session, then portraits built around the
-                version of you that actually feels right. The whole thing
-                considered: the hair, the direction, and the image.
-              </p>
-              <p className="text-base text-[#2A2440] md:text-lg">
-                In the salon or around SoHo. Film, digital, or both. I direct it
-                so you are not left guessing.
-              </p>
-            </div>
-          </div>
-        </motion.section>
-        </div>
-
         {/* Portrait Work */}
         <section id="photography" className="mx-auto max-w-7xl px-5 py-20 md:px-10 md:py-24">
           <motion.div
@@ -566,7 +538,7 @@ export default function Home() {
             viewport={{ once: true, margin: "-80px" }}
           >
             <p className="section-label">
-              Selected Portraits
+              Portraits
             </p>
             <p className="max-w-2xl text-[26px] font-medium leading-[1.4] tracking-[-0.03em] md:text-[38px]">
               Portraits that feel like you on your best day. Natural, intentional,
@@ -608,6 +580,34 @@ export default function Home() {
             </a>
           </div>
         </section>
+
+        {/* Hair + Portrait intro */}
+        <div className="section-cool">
+        <motion.section
+          className="mx-auto max-w-7xl px-5 pb-28 pt-12 md:px-10 md:pb-32 md:pt-14"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-80px" }}
+        >
+          <div className="grid gap-10 pt-6 md:grid-cols-[0.8fr_1.2fr]">
+            <p className="section-label">
+              Hair + Portrait
+            </p>
+            <div className="max-w-3xl space-y-6 text-[22px] font-normal leading-[1.45] tracking-[-0.02em] md:text-[32px]">
+              <p className="font-light">
+                A haircut or styling session, then portraits built around the
+                version of you that actually feels right. The whole thing
+                considered: the hair, the direction, and the image.
+              </p>
+              <p className="text-base text-[#2A2440] md:text-lg">
+                In the salon or around SoHo. Film, digital, or both. I direct it
+                so you are not left guessing.
+              </p>
+            </div>
+          </div>
+        </motion.section>
+        </div>
 
       </main>
 
