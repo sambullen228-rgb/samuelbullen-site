@@ -145,12 +145,12 @@ export default function Home() {
         {!announcementDismissed && (
           <div className="relative flex h-10 items-center justify-center bg-neutral-900 px-10">
             <p className="text-center text-[11px] uppercase tracking-[0.1em] text-neutral-300">
-              New clients welcome. Start with the service that fits your hair.{" "}
+              Now booking new clients. Start with the service that fits your hair.{" "}
               <a
                 href="#pricing"
                 className="text-white underline underline-offset-2 transition-opacity hover:opacity-75"
               >
-                Book →
+                Book Appointment →
               </a>
             </p>
             <button
@@ -190,9 +190,9 @@ export default function Home() {
             <motion.h1
               variants={fadeUp}
               custom={1}
-              className="max-w-2xl text-[48px] font-medium leading-[0.88] tracking-[-0.075em] md:text-[112px]"
+              className="max-w-2xl text-[48px] font-medium leading-[0.88] tracking-[-0.085em] md:text-[112px]"
             >
-              Hair that finally makes sense.
+              Hair that finally works.
             </motion.h1>
             <p className="sr-only">
               SoHo NYC hairstylist specializing in hard-to-manage hair, texture, and natural movement.
@@ -207,7 +207,7 @@ export default function Home() {
             <motion.div
               variants={fadeUp}
               custom={4}
-              className="mt-9 max-w-xl space-y-5 text-[17px] leading-[1.65] text-neutral-500 md:mt-11 md:text-[20px]"
+              className="mt-9 max-w-lg space-y-5 text-[17px] leading-[1.65] text-neutral-500 md:mt-11 md:text-[20px]"
             >
               <div>
                 <p className="text-[22px] font-medium leading-tight tracking-[-0.03em] text-black md:text-[30px]">
@@ -237,7 +237,7 @@ export default function Home() {
                 href="#pricing"
                 className="bg-black px-5 py-3 text-sm tracking-wide text-white transition duration-300 hover:-translate-y-px hover:opacity-85 active:opacity-70"
               >
-                Book Now
+                Book Appointment
               </a>
               <a
                 href="#hair"
@@ -256,10 +256,10 @@ export default function Home() {
           >
             <div className="aspect-[3/4] w-[280px] overflow-hidden lg:w-[340px]">
               <img
-                src="/images/hair/hair-2.jpg"
-                alt="thick textured haircut with controlled shape"
+                src="/images/me.jpg"
+                alt="Samuel Bullen hairstylist working with client in SoHo NYC"
                 className="h-full w-full object-cover"
-                style={{ objectPosition: "center 35%" }}
+                style={{ objectPosition: "center 20%" }}
               />
             </div>
           </motion.div>
@@ -365,7 +365,7 @@ export default function Home() {
                     src={`/images/hair/${workImageSources[index]}`}
                     alt={workImageAlts[index]}
                     style={{ objectPosition: workImagePositions[index] }}
-                    className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-[1.03]"
+                    className="h-full w-full object-cover transition duration-900 ease-out group-hover:scale-[1.02]"
                   />
                 </div>
                 <figcaption className="mt-2 translate-y-0 text-[11px] text-neutral-500 opacity-80 transition duration-300 group-hover:-translate-y-0.5 group-hover:opacity-100 sm:text-xs">
@@ -441,8 +441,11 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
           >
-            <p className="mb-12 text-xs uppercase tracking-[0.22em] text-neutral-500">
+            <p className="mb-4 text-xs uppercase tracking-[0.22em] text-neutral-500">
               Services
+            </p>
+            <p className="mb-8 max-w-xl text-[18px] leading-relaxed text-neutral-600 md:text-[20px]">
+              Choose the session that fits your hair.
             </p>
           </motion.div>
           <div className="divide-y divide-neutral-300 border-y border-neutral-300">
@@ -517,7 +520,7 @@ export default function Home() {
             viewport={{ once: true, margin: "-80px" }}
           >
             <p className="text-xs uppercase tracking-[0.22em] text-neutral-500">
-              Portrait Work
+              Selected Portraits
             </p>
             <p className="max-w-2xl text-[22px] font-medium leading-[1.45] tracking-[-0.035em] md:text-[34px]">
               Portraits that feel like you on your best day. Natural, intentional,
@@ -541,7 +544,7 @@ export default function Home() {
                     src={`/images/portraits/${portraitImageSources[index]}`}
                     alt={portraitImageAlts[index]}
                     style={{ objectPosition: portraitImagePositions[index] }}
-                    className="h-full w-full object-cover transition duration-700 ease-out group-hover:scale-[1.03]"
+                    className="h-full w-full object-cover transition duration-900 ease-out group-hover:scale-[1.02]"
                   />
                 </div>
                 <figcaption className="mt-2 block translate-y-0 text-[11px] leading-tight text-neutral-500 opacity-80 transition duration-300 group-hover:-translate-y-0.5 group-hover:opacity-100 sm:text-xs">
