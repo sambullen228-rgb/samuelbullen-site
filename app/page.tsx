@@ -40,11 +40,11 @@ const services = [
 
 const workCaptions = [
   "Texture control",
-  "Defined curls",
+  "Soft movement",
   "Clean shape",
   "Creative texture",
   "Real-world wear",
-  "Soft movement",
+  "Defined curls",
   "Precision cut",
   "Transformation",
 ];
