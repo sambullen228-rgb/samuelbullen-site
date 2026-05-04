@@ -176,7 +176,7 @@ export default function Home() {
             <h1
               className="mt-2 max-w-2xl text-[52px] font-normal leading-[1.08] tracking-[-0.02em] md:mt-3 md:text-[86px]"
             >
-              Hair that works with you, not against you.
+              Hair Design that finally works.
             </h1>
             <p className="sr-only">
               SoHo NYC hairstylist specializing in hard-to-manage hair, texture, and natural movement.
