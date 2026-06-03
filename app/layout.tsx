@@ -48,7 +48,7 @@ export default function RootLayout({
               name: "Samuel Bullen",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "469 Broadway, 4th Floor",
+                streetAddress: "456 Broadway, 4th Floor",
                 addressLocality: "New York",
                 addressRegion: "NY",
                 postalCode: "10013",
