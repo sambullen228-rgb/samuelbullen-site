@@ -20,9 +20,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Samuel Bullen | SoHo NYC Hairstylist for Hard-to-Manage Hair",
+  title: "Samuel Bullen | Lower East Side NYC Hairstylist for Hard-to-Manage Hair",
   description:
-    "SoHo NYC hairstylist specializing in hard-to-manage hair, texture control, and cuts that work in real life. Book a haircut or learn how to manage your hair.",
+    "Lower East Side NYC hairstylist specializing in hard-to-manage hair, texture control, and cuts that work in real life. Book a haircut or learn how to manage your hair.",
 };
 
 export default function RootLayout({
@@ -48,13 +48,13 @@ export default function RootLayout({
               name: "Samuel Bullen",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "456 Broadway, 4th Floor",
+                streetAddress: "155 Orchard Street",
                 addressLocality: "New York",
                 addressRegion: "NY",
-                postalCode: "10013",
+                postalCode: "10002",
                 addressCountry: "US",
               },
-              areaServed: "SoHo NYC",
+              areaServed: "Lower East Side NYC",
               url: "https://samuelbullen.com",
               sameAs: ["https://www.instagram.com/thesambullen"],
             }),
