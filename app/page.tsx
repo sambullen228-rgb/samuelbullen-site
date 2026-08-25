@@ -170,9 +170,9 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mt-5 text-[14px] font-normal leading-[1.55] text-[#E8E6E1] md:text-[15px]"
             >
-              456 Broadway, 4th Floor
+              155 Orchard Street
               <br />
-              SoHo, New York City
+              New York, NY 10002
             </motion.p>
           </div>
 
@@ -307,7 +307,7 @@ export default function Home() {
         {/* ── Credibility bar ────────────────────────────── */}
         <div className="mx-auto max-w-7xl px-5 py-10 md:px-10 md:py-14">
           <div className="flex flex-col items-center gap-5 sm:flex-row sm:justify-center sm:gap-0 sm:divide-x sm:divide-white/[0.04]">
-            {["15 Years Experience", "456 Broadway, 4th Floor, New York, NY", "Hair + Portraits"].map((stat) => (
+            {["15 Years Experience", "155 Orchard Street, New York, NY 10002", "Hair + Portraits"].map((stat) => (
               <span
                 key={stat}
                 className="text-center text-[10px] uppercase tracking-[0.2em] text-[#5A5955] sm:px-10"
@@ -446,7 +446,7 @@ export default function Home() {
               Stop fighting your hair every morning.
             </h2>
             <p className="mx-auto mt-6 max-w-lg text-[15px] leading-[1.7] text-[#9A9690] md:text-[17px]">
-              456 Broadway, 4th Floor, SoHo. New clients welcome.
+              155 Orchard Street, New York, NY 10002. New clients welcome.
               Book the service that fits your hair and start leaving the house with confidence.
             </p>
             <div className="mt-10 flex justify-center">
@@ -465,7 +465,7 @@ export default function Home() {
         <div>
           <p className="text-[13px] text-[#E8E6E1]">Samuel Bullen · SoHo / Downtown NYC</p>
           <p className="mt-2 text-[11px] tracking-[0.05em]">
-            456 Broadway, 4th Floor, New York, NY
+            155 Orchard Street, New York, NY 10002
           </p>
         </div>
         <div className="flex flex-wrap gap-5">
