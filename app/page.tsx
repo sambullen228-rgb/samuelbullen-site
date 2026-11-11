@@ -6,37 +6,51 @@ import StickyMobileCTA from "./StickyMobileCTA";
 import UrgencyBanner from "./UrgencyBanner";
 import TransformationFeature from "./TransformationFeature";
 
-const HAIRCUT_URL = "https://book.squareup.com/appointments/4xn7zibkrm3la6/location/L0XM0F8NRHB11/services/HHBKQ7WSRX4G2IQCL2PPL6JU";
+const BOOKING_URL = "https://book.squareup.com/appointments/4xn7zibkrm3la6/location/L0XM0F8NRHB11/services";
+const NEW_CLIENT_HAIRCUT_URL = "https://book.squareup.com/appointments/4xn7zibkrm3la6/location/L0XM0F8NRHB11/services/HHBKQ7WSRX4G2IQCL2PPL6JU";
+const HAIRCUT_URL = "https://book.squareup.com/appointments/4xn7zibkrm3la6/location/L0XM0F8NRHB11/services/MKZ423DU5FWJ4J5CGJ7YWVMD";
 const DRYCUT_URL = "https://book.squareup.com/appointments/4xn7zibkrm3la6/location/L0XM0F8NRHB11/services/QBR6MSH6NWI4S5AD2YIHRIMO";
 const BANGS_URL = "https://book.squareup.com/appointments/4xn7zibkrm3la6/location/L0XM0F8NRHB11/services/7JCPS5HMU34AUJER24ZAMH74";
 const EDU_URL = "https://book.squareup.com/appointments/4xn7zibkrm3la6/location/L0XM0F8NRHB11/services/SDVG3UBSSKP6EYEIJDFNOSVP";
+const BLOWOUT_URL = "https://book.squareup.com/appointments/4xn7zibkrm3la6/location/L0XM0F8NRHB11/services/2WPSIJDLOMGPSOGATQDPNBDD";
+const SHINE_GLOSS_URL = "https://book.squareup.com/appointments/4xn7zibkrm3la6/location/L0XM0F8NRHB11/services/GA2NYVG7XOFIAF4YS6KNT4G7";
+const HAIRCUT_GLOSS_URL = "https://book.squareup.com/appointments/4xn7zibkrm3la6/location/L0XM0F8NRHB11/services/32NG7SZGOF3XX2EPSCCAV4XK";
 
 const services = [
   {
-    name: "Haircut",
-    price: "$200",
-    time: "45 min",
-    badge: "Most Popular",
+    name: "New Client Haircut",
+    price: "$250",
+    time: "75 min",
+    badge: "First Visit",
     description:
-      "Full wash, haircut, and style. Scissor or razor work built around your natural growth, texture, and daily routine.",
+      "For new clients, bigger changes, or anyone wanting the full experience. Includes consultation, wash, cut, and styling, with time to work through your texture, shape, and how you actually wear your hair.",
+    href: NEW_CLIENT_HAIRCUT_URL,
+  },
+  {
+    name: "Haircut",
+    price: "Pricing can vary",
+    time: "60 min",
+    badge: null,
+    description:
+      "A haircut tailored to your preferred look, from a simple trim to a whole new style, with time to discuss the look you want.",
     href: HAIRCUT_URL,
   },
   {
     name: "Dry Cut",
-    price: "$150",
-    time: "30 min",
+    price: "$175",
+    time: "45 min",
     badge: null,
     description:
-      "No wash or styling. You come in with clean, dry hair. Best for refining shape, removing weight, and adjusting how the cut moves.",
+      "For existing shapes that need refining, weight removed, or movement restored. Arrive with clean, completely dry hair worn as you normally wear it. No wash or styling. No razor cutting on dry hair.",
     href: DRYCUT_URL,
   },
   {
-    name: "Bangs & Bits",
-    price: "$75",
-    time: "15 min",
+    name: "Bangs and Bits",
+    price: "$100",
+    time: "30 min",
     badge: null,
     description:
-      "Bang trim, face-framing layers, or any single targeted area. In and out — no full appointment needed.",
+      "For maintaining bangs, face-framing, and the pieces around the hairline that make the whole haircut work. Includes weight removal and small shape shifts.",
     href: BANGS_URL,
   },
   {
@@ -47,6 +61,30 @@ const services = [
     description:
       "A focused session to understand your hair, products, tools, drying, and daily routine. Figure out what your hair needs and what to stop doing.",
     href: EDU_URL,
+  },
+  {
+    name: "Blowout",
+    price: "$120",
+    time: "45 min",
+    badge: null,
+    description: null,
+    href: BLOWOUT_URL,
+  },
+  {
+    name: "Shine Gloss",
+    price: "$50",
+    time: "20 min",
+    badge: null,
+    description: null,
+    href: SHINE_GLOSS_URL,
+  },
+  {
+    name: "Haircut w/Shine Gloss",
+    price: "$245",
+    time: "90 min",
+    badge: null,
+    description: null,
+    href: HAIRCUT_GLOSS_URL,
   },
 ];
 
@@ -258,7 +296,7 @@ export default function Home() {
                 Choose the session that fits your hair.
               </h2>
               <p className="mb-12 max-w-md text-[14px] leading-[1.8] text-[#9A9690]">
-                Every service includes a consultation and a walkthrough. You leave knowing what to do, not guessing.
+                For a first haircut or a bigger change, choose New Client Haircut. Select your service below to see availability and book through Square.
               </p>
             </div>
 
@@ -273,7 +311,7 @@ export default function Home() {
                     index === 0 ? "bg-[#1A1918]/30" : ""
                   }`}
                 >
-                  <div className="flex items-center gap-3">
+                  <div className="flex flex-wrap items-center gap-3">
                     <h3 className="text-[18px] font-normal tracking-[0] text-[#E8E6E1] md:text-[20px]">
                       {service.name}
                     </h3>
@@ -287,7 +325,7 @@ export default function Home() {
                     <p className="text-[15px] font-light text-[#E8E6E1]">{service.price}</p>
                     <p className="text-[11px] text-[#5A5955]">{service.time}</p>
                   </div>
-                  <p className="max-w-[520px] text-[13px] font-light leading-[1.8] text-[#9A9690]">
+                  <p className={`max-w-[520px] text-[13px] font-light leading-[1.8] text-[#9A9690] ${service.description ? "" : "hidden md:block"}`}>
                     {service.description}
                   </p>
                   <div className="hidden md:block">
@@ -302,7 +340,7 @@ export default function Home() {
         </section>
 
         {/* ── Featured Transformation ────────────────────── */}
-        <TransformationFeature bookingUrl={HAIRCUT_URL} />
+        <TransformationFeature bookingUrl={BOOKING_URL} />
 
         {/* ── Credibility bar ────────────────────────────── */}
         <div className="mx-auto max-w-7xl px-5 py-10 md:px-10 md:py-14">
@@ -481,7 +519,7 @@ export default function Home() {
             Instagram
           </a>
           <a
-            href="https://book.squareup.com/appointments/4xn7zibkrm3la6/location/L0XM0F8NRHB11/services/HHBKQ7WSRX4G2IQCL2PPL6JU"
+            href={BOOKING_URL}
             target="_blank"
             rel="noreferrer"
             className="transition duration-[400ms] hover:text-[#E8E6E1]"
