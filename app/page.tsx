@@ -54,6 +54,14 @@ const services = [
     href: BANGS_URL,
   },
   {
+    name: "Haircut w/Shine Gloss",
+    price: "$280",
+    time: "90 min",
+    badge: null,
+    description: null,
+    href: HAIRCUT_GLOSS_URL,
+  },
+  {
     name: "Hair Education: Fix Your Routine",
     price: "$125",
     time: "30 min",
@@ -64,7 +72,7 @@ const services = [
   },
   {
     name: "Blowout",
-    price: "$120",
+    price: "$150",
     time: "45 min",
     badge: null,
     description: null,
@@ -77,14 +85,6 @@ const services = [
     badge: null,
     description: null,
     href: SHINE_GLOSS_URL,
-  },
-  {
-    name: "Haircut w/Shine Gloss",
-    price: "$245",
-    time: "90 min",
-    badge: null,
-    description: null,
-    href: HAIRCUT_GLOSS_URL,
   },
 ];
 
